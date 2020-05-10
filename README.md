@@ -12,4 +12,13 @@
 
 * vim
 
+## Examples
+
+* Interactively inspect an existing volume, destroy container upon exist
+  * `docker run -it --rm --mount source=terraria,target=/world --name="volumeinspect" trfc/vimtainer`
+* Print the contents of a file from inside a volume
+  * `docker run --rm --mount source=terraria,target=/world --name="volumeinspect" trfc/vimtainer cat /world/authcode.txt`
+
+
+
 [dockerHub]: https://hub.docker.com/repository/docker/trfc/vimtainer
